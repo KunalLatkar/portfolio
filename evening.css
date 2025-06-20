@@ -1,61 +1,60 @@
-/* Night Theme Styles */
-.night-theme {
-  background-color: #363434;
-  color: #EFECEC;
-}
-
-/* Global Styles */
-.night-theme body {
+/* Global Reset */
+body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #363434;
-  color: #EFECEC;
   line-height: 1.6;
 }
 
-.night-theme img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.night-theme a {
-  color: #EFECEC;
+/* Theme Base */
+.evening-theme {
+  background-color: #FFF0DC;
+  color: #543A14;
+}
+
+/* Links */
+.evening-theme a {
+  color: #543A14;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.night-theme a:hover {
-  color: #62929A;
+.evening-theme a:hover {
+  color: #F0BB78;
 }
 
 /* Header */
-.night-theme header {
+.evening-theme header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #5C5757;
-  color: #EFECEC;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid #444;
+  background-color: #F0BB78;
+  color: #131010;
+  box-shadow: 0 2px 4px rgba(19, 16, 16, 0.2);
+  border-bottom: 1px solid rgba(19, 16, 16, 0.15);
 }
 
-.night-theme header .profile {
+.evening-theme header .profile {
   display: flex;
   align-items: center;
 }
 
-.night-theme header .profile-image {
+.evening-theme header .profile-image {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 1rem;
-  border: 2px solid #EFECEC;
+  border: 2px solid rgba(19, 16, 16, 0.1);
 }
 
-.night-theme header .profile-image img {
+.evening-theme header .profile-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -63,69 +62,68 @@
   filter: grayscale(100%);
 }
 
-.night-theme header .profile-info h1 {
+.evening-theme header .profile-info h1 {
   font-size: 2rem;
   margin: 0;
   font-weight: bold;
-  color: #EFECEC;
+  color: #131010;
 }
 
-.night-theme header .profile-info p {
+.evening-theme header .profile-info p {
   margin: 4px 0 0;
-  color: #ccc;
+  color: #543A14;
   font-size: 1rem;
 }
 
-.night-theme header nav {
+.evening-theme header nav {
   display: flex;
   gap: 1.5rem;
 }
 
-.night-theme header nav button,
-.night-theme header nav a {
+.evening-theme header nav button,
+.evening-theme header nav a {
   background: none;
   border: none;
   font-size: 1rem;
   cursor: pointer;
   transition: color 0.2s ease;
-  color: #EFECEC;
+  color: #131010;
 }
 
-.night-theme header nav .resume-btn {
-  background-color: #62929A;
-  color: #EFECEC;
+.evening-theme header nav .resume-btn {
+  background-color: #131010;
+  color: #FFF0DC;
   padding: 0.5rem 1rem;
   border-radius: 6px;
 }
 
-.night-theme header nav .resume-btn:hover {
-  background-color: #EFECEC;
-  color: #363434;
+.evening-theme header nav .resume-btn:hover {
+  background-color: #543A14;
 }
 
-/* Main Layout */
-.night-theme main {
+/* Main */
+.evening-theme main {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Section Titles */
-.night-theme section h2 {
+.evening-theme section h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #EFECEC;
+  color: #543A14;
 }
 
 /* About */
-.night-theme #about p {
+.evening-theme #about p {
   max-width: 1200px;
   font-size: 1.1rem;
-  color: #EFECEC;
+  color: #543A14;
 }
 
 /* Contact Icons */
-.night-theme .contact-icons {
+.evening-theme .contact-icons {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
@@ -134,97 +132,96 @@
   width: 100%;
 }
 
-.night-theme .contact-icon {
+.evening-theme .contact-icon {
   height: 48px;
   width: 48px;
   filter: grayscale(100%);
   transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
   cursor: pointer;
-  color: white;
 }
 
-.night-theme .contact-icon:hover {
+.evening-theme .contact-icon:hover {
   transform: scale(1.1);
   opacity: 0.8;
   filter: grayscale(0%);
 }
 
 /* Working On Grid */
-.night-theme #working-on .grid {
+.evening-theme #working-on .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
 @media (min-width: 768px) {
-  .night-theme #working-on .grid {
+  .evening-theme #working-on .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.night-theme .card {
+.evening-theme .card {
   display: flex;
   align-items: center;
   padding: 1.5rem;
-  border: 1px solid #EFECEC;
+  border: 1px solid #543A14;
   border-radius: 12px;
-  background-color: #5C5757;
-  transition: box-shadow 0.2s ease;
+  background-color: #FFF0DC;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.night-theme .card:hover {
+.evening-theme .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(239, 236, 236, 0.2);
+  box-shadow: 0 6px 12px rgba(19, 16, 16, 0.1);
 }
 
-.night-theme .card svg {
+.evening-theme .card svg {
   margin-right: 1rem;
 }
 
 /* Skills */
-.night-theme #skills .grid {
+.evening-theme #skills .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 @media (min-width: 768px) {
-  .night-theme #skills .grid {
+  .evening-theme #skills .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.night-theme .skill-section {
-  background-color: #5C5757;
-  border: 1px solid #EFECEC;
+.evening-theme .skill-section {
+  background-color: #FFF0DC;
+  border: 1px solid #543A14;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(239, 236, 236, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
-.night-theme .skill-section:hover {
+.evening-theme .skill-section:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(239, 236, 236, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.night-theme .skill-section h3 {
-  color: #EFECEC;
+.evening-theme .skill-section h3 {
+  color: #131010;
 }
 
-.night-theme .skill-section p {
+.evening-theme .skill-section p {
   margin-bottom: 0.5rem;
-  color: #EFECEC;
+  color: #543A14;
   font-size: 1rem;
 }
 
-.night-theme .skill-item {
+.evening-theme .skill-item {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
 }
 
-.night-theme .skill-item img {
+.evening-theme .skill-item img {
   width: 24px;
   height: 24px;
   margin-right: 0.5rem;
@@ -232,96 +229,90 @@
 }
 
 /* Projects */
-.night-theme #projects .project-grid {
+.evening-theme #projects .project-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 @media (min-width: 768px) {
-  .night-theme #projects .project-grid {
+  .evening-theme #projects .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.night-theme .project-card {
-  border: 1px solid #EFECEC;
-  background-color: #5C5757;
+.evening-theme .project-card {
+  border: 1px solid #543A14;
+  background-color: #FFF0DC;
   border-radius: 8px;
   overflow: hidden;
-  transition: box-shadow 0.2s ease;
-  width: 100%;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
   height: 400px;
+  width: 100%;
   position: relative;
 }
 
-.night-theme .project-card:hover {
+.evening-theme .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(239, 236, 236, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.night-theme .project-card .thumb {
+.evening-theme .project-card .thumb {
   height: 200px;
-  background-color: #62929A;
+  background-color: #F0BB78;
   overflow: hidden;
 }
 
-.night-theme .project-card .thumb img {
+.evening-theme .project-card .thumb img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.night-theme .project-card .content {
+.evening-theme .project-card .content {
   padding: 1.5rem;
 }
 
-.night-theme .project-card .content h3 {
+.evening-theme .project-card .content h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
-  color: #EFECEC;
+  color: #131010;
 }
 
-.night-theme .project-card .content p {
-  color: #EFECEC;
+.evening-theme .project-card .content p {
+  color: #543A14;
   margin-bottom: 1rem;
 }
 
-.night-theme .project-card .content button:hover {
-  background-color: #62929A;
-  color: #fff;
-  border-color: #62929A;
-}
-
 /* Contact Form */
-.night-theme #contact form {
+.evening-theme #contact form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   max-width: 500px;
 }
 
-.night-theme #contact label {
+.evening-theme #contact label {
   font-weight: 500;
-  color: #EFECEC;
+  margin-bottom: 0.3rem;
 }
 
-.night-theme #contact input,
-.night-theme #contact textarea {
+.evening-theme #contact input,
+.evening-theme #contact textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #EFECEC;
+  border: 1px solid #543A14;
   border-radius: 6px;
+  background-color: #FFF0DC;
+  color: #131010;
   font-size: 1rem;
   font-family: inherit;
-  background-color: #5C5757;
-  color: #EFECEC;
 }
 
-.night-theme #contact button {
-  background-color: #62929A;
-  color: #EFECEC;
+.evening-theme #contact button {
+  background-color: #131010;
+  color: #FFF0DC;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   border-radius: 6px;
@@ -330,48 +321,49 @@
   transition: background-color 0.2s ease;
 }
 
-.night-theme #contact button:hover {
-  background-color: #EFECEC;
-  color: #62929A;
+.evening-theme #contact button:hover {
+  background-color: #543A14;
 }
 
 /* Footer */
-.night-theme footer {
-  background-color: #5C5757;
-  border-top: 1px solid #EFECEC;
+.evening-theme footer {
+  background-color: #F0BB78;
+  border-top: 1px solid #543A14;
   padding: 2rem;
-  color: #EFECEC;
+  color: #131010;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
-.night-theme footer .footer-content {
+.evening-theme footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: auto;
   width: 100%;
+  margin: auto;
 }
 
-.night-theme footer p {
+.evening-theme footer p {
   margin: 0;
-  color: #EFECEC;
+  color: #131010;
 }
 
-.night-theme footer .socials {
+.evening-theme footer .socials {
   display: flex;
   gap: 1rem;
 }
 
-.night-theme footer .socials a svg {
-  fill: #EFECEC;
+.evening-theme footer .socials a svg {
+  width: 24px;
+  height: 24px;
+  fill: #543A14;
   transition: fill 0.2s ease;
 }
 
-.night-theme footer .socials a:hover svg {
-  fill: #62929A;
+.evening-theme footer .socials a:hover svg {
+  fill: #131010;
 }
