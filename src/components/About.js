@@ -16,10 +16,10 @@ export default function About() {
         <div onClick={() => setShowEmail(true)} title="Email">
           <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email" className="contact-icon" />
         </div>
-        <a href="https://www.linkedin.com/in/sara" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/kunal-latkar-1554b6259/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
           <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" className="contact-icon" />
         </a>
-        <a href="https://github.com/sara" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <a href="https://github.com/KunalLatkar" target="_blank" rel="noopener noreferrer" title="GitHub">
           <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" className="contact-icon" />
         </a>
         <div onClick={() => setShowPhone(true)} title="Phone">
@@ -37,7 +37,7 @@ export default function About() {
       {showPhone && (
         <PopupModal onClose={closeAll}>
           <strong>Phone:</strong><br />
-          +1 (234) 567-890
+           +91 9607095223
         </PopupModal>
       )}
 
