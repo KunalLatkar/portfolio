@@ -1,0 +1,36 @@
+data = {
+    "station_code": [1001, 2601, 4444, 4037, 3866, 2602, 4445, 1002, 1003],
+    "Monitoring_Location": [
+        "RIVER BEAS AT U/S MANALI",
+        "RIVER BEAS AT D/S MANALI",
+        "RIVER BEAS D/S OF WASTE PROCESSING FACILITY AT MANALI",
+        "RIVER BEAS D/S MANALSU NALLAH",
+        "RIVER BEAS U/S BEFORE CONF. OF MANALSU NALLAH",
+        "RIVER BEAS, U/S KULLU",
+        "RIVER BEAS D/S OF WASTE PROCESSING FACILITY AT KULLU",
+        "RIVER BEAS D/S KULLU",
+        "RIVER BEAS D/S AUT"
+    ],
+    "State": ["HIMACHAL PRADESH"] * 9,
+    "min_temp": [18.95, 18.95, 18.95, 18.95, 18.95, 18.95, 18.95, 18.95, 5],
+    "max_temp": [24, 29, 29, 29, 29, 29, 29, 29, 29],
+    "min_do": [7.8, 7.6, 7.8, 7.9, 7.8, 7.6, 7.6, 7.5, 7.5],
+    "max_do": [9.2, 9, 8.8, 8.9, 9.1, 8.7, 8.4, 8.4, 8.1],
+    "min_ph": [7.2, 6.5, 6.7, 6.3, 7.0, 6.7, 6.6, 7.2, 7.2],
+    "max_ph": [8.2, 8.1, 7.8, 8.0, 7.8, 7.8, 7.7, 8.0, 8.2],
+    "min_conductivity": [68, 58, 62, 52, 51, 44, 73, 77, 61],
+    "max_conductivity": [380, 135, 113, 137, 113, 128, 170, 144, 129],
+    "min_BOD": [1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "max_BOD": [2.8, 2.8, 2.8, 1, 1, 1, 1.6, 1.6, 1],
+    "min_nitrate": [0.32, 0.32, 0.32, 0.32, 0.32, 0.32,0.32, 0.32, 0.32] ,
+    "max_nitrate": [1.15, 1.87, 1.08, 1.74, 0.97, 0.9, 0.96, 2.65, 0.77],
+    "min_facal_coliform": [2, 110, 110, 22, 23, 49, 47, 110, 34],
+    "max_facal_coliform": [170, 1600, 1600, 110, 120, 220, 150, 540, 280],
+    "min_total_coliform": [63, 920, 350, 79, 110, 240, 280, 540, 170],
+    "max_total_coliform": [540, 1600, 1600, 540, 430, 920, 920, 1600, 1600],
+    "min_fecal_streptococci": [2 ,2, 2, 2, 2, 2, 2, 2, 2],
+    "max_fecal_streptococci": [2 ,2, 2, 2, 2, 2, 2, 2, 2],
+    "year": [2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023],
+    "Contaminated": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+}
+

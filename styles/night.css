@@ -5,7 +5,7 @@
 }
 
 /* Global Styles */
-.night-theme body {
+body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #363434;
@@ -13,24 +13,24 @@
   line-height: 1.6;
 }
 
-.night-theme img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.night-theme a {
+a {
   color: #EFECEC;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.night-theme a:hover {
+a:hover {
   color: #62929A;
 }
 
 /* Header */
-.night-theme header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,12 +41,12 @@
   border-bottom: 1px solid #444;
 }
 
-.night-theme header .profile {
+header .profile {
   display: flex;
   align-items: center;
 }
 
-.night-theme header .profile-image {
+header .profile-image {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -55,34 +55,33 @@
   border: 2px solid #EFECEC;
 }
 
-.night-theme header .profile-image img {
+header .profile-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: grayscale(100%);
 }
 
-.night-theme header .profile-info h1 {
+header .profile-info h1 {
   font-size: 2rem;
   margin: 0;
   font-weight: bold;
   color: #EFECEC;
 }
 
-.night-theme header .profile-info p {
+header .profile-info p {
   margin: 4px 0 0;
   color: #ccc;
   font-size: 1rem;
 }
 
-.night-theme header nav {
+header nav {
   display: flex;
   gap: 1.5rem;
 }
 
-.night-theme header nav button,
-.night-theme header nav a {
+header nav button,
+header nav a {
   background: none;
   border: none;
   font-size: 1rem;
@@ -91,41 +90,41 @@
   color: #EFECEC;
 }
 
-.night-theme header nav .resume-btn {
+header nav .resume-btn {
   background-color: #62929A;
   color: #EFECEC;
   padding: 0.5rem 1rem;
   border-radius: 6px;
 }
 
-.night-theme header nav .resume-btn:hover {
+header nav .resume-btn:hover {
   background-color: #EFECEC;
   color: #363434;
 }
 
 /* Main Layout */
-.night-theme main {
+main {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Section Titles */
-.night-theme section h2 {
+section h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #EFECEC;
 }
 
 /* About */
-.night-theme #about p {
+#about p {
   max-width: 1200px;
   font-size: 1.1rem;
   color: #EFECEC;
 }
 
 /* Contact Icons */
-.night-theme .contact-icons {
+.contact-icons {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
@@ -134,7 +133,7 @@
   width: 100%;
 }
 
-.night-theme .contact-icon {
+.contact-icon {
   height: 48px;
   width: 48px;
   filter: grayscale(100%);
@@ -143,26 +142,26 @@
   color: white;
 }
 
-.night-theme .contact-icon:hover {
+.contact-icon:hover {
   transform: scale(1.1);
   opacity: 0.8;
   filter: grayscale(0%);
 }
 
 /* Working On Grid */
-.night-theme #working-on .grid {
+#working-on .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
 @media (min-width: 768px) {
-  .night-theme #working-on .grid {
+  #working-on .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.night-theme .card {
+.card {
   display: flex;
   align-items: center;
   padding: 1.5rem;
@@ -172,29 +171,29 @@
   transition: box-shadow 0.2s ease;
 }
 
-.night-theme .card:hover {
+.card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(239, 236, 236, 0.2);
 }
 
-.night-theme .card svg {
+.card svg {
   margin-right: 1rem;
 }
 
 /* Skills */
-.night-theme #skills .grid {
+#skills .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 @media (min-width: 768px) {
-  .night-theme #skills .grid {
+  #skills .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.night-theme .skill-section {
+.skill-section {
   background-color: #5C5757;
   border: 1px solid #EFECEC;
   border-radius: 12px;
@@ -203,28 +202,28 @@
   transition: transform 0.3s ease;
 }
 
-.night-theme .skill-section:hover {
+.skill-section:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(239, 236, 236, 0.2);
 }
 
-.night-theme .skill-section h3 {
+.skill-section h3 {
   color: #EFECEC;
 }
 
-.night-theme .skill-section p {
+.skill-section p {
   margin-bottom: 0.5rem;
   color: #EFECEC;
   font-size: 1rem;
 }
 
-.night-theme .skill-item {
+.skill-item {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
 }
 
-.night-theme .skill-item img {
+.skill-item img {
   width: 24px;
   height: 24px;
   margin-right: 0.5rem;
@@ -232,19 +231,19 @@
 }
 
 /* Projects */
-.night-theme #projects .project-grid {
+#projects .project-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 @media (min-width: 768px) {
-  .night-theme #projects .project-grid {
+  #projects .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.night-theme .project-card {
+.project-card {
   border: 1px solid #EFECEC;
   background-color: #5C5757;
   border-radius: 8px;
@@ -255,60 +254,60 @@
   position: relative;
 }
 
-.night-theme .project-card:hover {
+.project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(239, 236, 236, 0.2);
 }
 
-.night-theme .project-card .thumb {
+.project-card .thumb {
   height: 200px;
   background-color: #62929A;
   overflow: hidden;
 }
 
-.night-theme .project-card .thumb img {
+.project-card .content button:hover {
+  background-color: #62929A;
+  color: #fff;
+  border-color: #62929A;
+}
+
+.project-card .thumb img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.night-theme .project-card .content {
+.project-card .content {
   padding: 1.5rem;
 }
 
-.night-theme .project-card .content h3 {
+.project-card .content h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
   color: #EFECEC;
 }
 
-.night-theme .project-card .content p {
+.project-card .content p {
   color: #EFECEC;
   margin-bottom: 1rem;
 }
 
-.night-theme .project-card .content button:hover {
-  background-color: #62929A;
-  color: #fff;
-  border-color: #62929A;
-}
-
 /* Contact Form */
-.night-theme #contact form {
+#contact form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   max-width: 500px;
 }
 
-.night-theme #contact label {
+#contact label {
   font-weight: 500;
   color: #EFECEC;
 }
 
-.night-theme #contact input,
-.night-theme #contact textarea {
+#contact input,
+#contact textarea {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #EFECEC;
@@ -319,7 +318,7 @@
   color: #EFECEC;
 }
 
-.night-theme #contact button {
+#contact button {
   background-color: #62929A;
   color: #EFECEC;
   padding: 0.75rem 1.5rem;
@@ -330,13 +329,13 @@
   transition: background-color 0.2s ease;
 }
 
-.night-theme #contact button:hover {
+#contact button:hover {
   background-color: #EFECEC;
   color: #62929A;
 }
 
 /* Footer */
-.night-theme footer {
+footer {
   background-color: #5C5757;
   border-top: 1px solid #EFECEC;
   padding: 2rem;
@@ -347,7 +346,7 @@
   gap: 1rem;
 }
 
-.night-theme footer .footer-content {
+footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -357,21 +356,21 @@
   width: 100%;
 }
 
-.night-theme footer p {
+footer p {
   margin: 0;
   color: #EFECEC;
 }
 
-.night-theme footer .socials {
+footer .socials {
   display: flex;
   gap: 1rem;
 }
 
-.night-theme footer .socials a svg {
+footer .socials a svg {
   fill: #EFECEC;
   transition: fill 0.2s ease;
 }
 
-.night-theme footer .socials a:hover svg {
+footer .socials a:hover svg {
   fill: #62929A;
 }
