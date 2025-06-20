@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ProfilePhoto.css';
+import './ProfilePhoto.css'; // This is where your CSS will go
 
 export default function ProfilePhoto() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function ProfilePhoto() {
         onClick={openModal}
       >
         <img
-          src={`${process.env.PUBLIC_URL}/profile.jpg`}  
+          src="/profile.jpg" // Make sure profile.jpg is in the /public folder
           alt="Profile"
           className="w-full h-full object-cover"
         />
@@ -34,7 +34,7 @@ export default function ProfilePhoto() {
               ×
             </button>
             <img
-              src={`${process.env.PUBLIC_URL}/profile.jpg`} 
+              src="/profile.jpg"
               alt="Full Size"
               className="popup-image"
             />
