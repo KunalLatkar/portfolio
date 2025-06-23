@@ -34,7 +34,7 @@ export default function ProfilePhoto() {
               ×
             </button>
             <img
-              src="/profile.jpg"
+              src="profile.jpg"
               alt="Full Size"
               className="popup-image"
             />
