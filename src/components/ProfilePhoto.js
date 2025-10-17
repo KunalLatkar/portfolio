@@ -35,7 +35,7 @@ export default function ProfilePhoto() {
               ×
             </button>
            <img
-              src={`${process.env.PUBLIC_URL}/profile.jpg`}
+              src={`${process.env.PUBLIC_URL}//images/profile.jpg`}
               alt="Full Size"
               className="popup-image"
             />
