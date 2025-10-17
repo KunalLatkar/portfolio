@@ -46,3 +46,72 @@
 .theme-label {
   font-size: 14px;
 }
+
+/* 📱 Responsive Design for Theme Switch */
+@media (max-width: 768px) {
+  .theme-switch-wrapper {
+    gap: 8px;
+  }
+
+  .theme-switch {
+    width: 70px;
+    height: 28px;
+  }
+
+  .slider-pos {
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+  }
+
+  .pos-0 {
+    transform: translateX(3px);
+  }
+
+  .pos-1 {
+    transform: translateX(25px);
+  }
+
+  .pos-2 {
+    transform: translateX(47px);
+  }
+
+  .theme-label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-switch-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .theme-switch {
+    width: 60px;
+    height: 26px;
+  }
+
+  .slider-pos {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .pos-0 {
+    transform: translateX(3px);
+  }
+
+  .pos-1 {
+    transform: translateX(21px);
+  }
+
+  .pos-2 {
+    transform: translateX(39px);
+  }
+
+  .theme-label {
+    font-size: 12px;
+  }
+}

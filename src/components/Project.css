@@ -198,3 +198,100 @@ body.night .code-btn {
 .close-btn:hover {
   color: red;
 }
+
+/* 📱 Responsive Design for Project Section */
+@media (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* Stack projects on tablets */
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 600px;
+    padding: 16px;
+  }
+
+  .modal-content {
+    max-height: 70vh;
+  }
+
+  .modal-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .modal-content li {
+    font-size: 0.95rem;
+  }
+}
+
+/* 📲 Mobile Devices */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card img {
+    height: 160px;
+  }
+
+  .project-card .content {
+    padding: 0.75rem;
+    text-align: center;
+  }
+
+  .btn-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal {
+    width: 95%;
+    max-width: 400px;
+    padding: 1rem;
+  }
+
+  .modal-content {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .modal-image {
+    height: auto;
+    max-height: 220px;
+  }
+
+  .close-btn {
+    top: -12px;
+    right: -12px;
+    font-size: 1.5rem;
+    background: #fff;
+    border: none;
+  }
+}
+
+/* 🖥️ Large Screens (Optional for extra polish) */
+@media (min-width: 1440px) {
+  .project-grid {
+    gap: 2.5rem;
+  }
+
+  .project-card img {
+    height: 240px;
+  }
+}

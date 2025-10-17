@@ -367,3 +367,125 @@ footer .socials a svg {
 footer .socials a:hover svg {
   fill: #131010;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  header nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  #skills .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  #working-on .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  #projects .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    height: auto;
+  }
+
+  .project-card .thumb {
+    height: 180px;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-icons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .profile-info h1 {
+    font-size: 1.5rem;
+  }
+
+  header .profile-info p {
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .skill-section {
+    padding: 1rem;
+  }
+
+  #contact form {
+    gap: 0.75rem;
+  }
+
+  #contact input,
+  #contact textarea {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  #contact button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header nav,
+
+
+  header nav .resume-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 1.75rem;
+  }
+
+  .skill-section h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-card .content h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-card .content p {
+    font-size: 0.9rem;
+  }
+}

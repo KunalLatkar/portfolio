@@ -56,3 +56,64 @@
 .text a:hover {
   color: #0055aa;
 }
+
+/* 📱 Responsive Design for Working On Section */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .working-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .icon {
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .working-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 0.85rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}

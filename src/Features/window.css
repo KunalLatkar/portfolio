@@ -60,3 +60,74 @@
 .modal-content ul li {
   margin-bottom: 0.5rem;
 }
+
+/* 📱 Responsive Design for Window Modal */
+@media (max-width: 1024px) {
+  .modal {
+    width: 85%;
+    max-width: 700px;
+    padding: 1.25rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .modal-content ul li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+    max-width: 400px;
+    padding: 1rem;
+    max-height: 80vh;
+  }
+
+  .modal-content img.modal-image {
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+  .modal-content h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .modal-content ul {
+    padding-left: 1rem;
+  }
+
+  .modal-content ul li {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .close-btn {
+    top: -14px;
+    right: -14px;
+    font-size: 1.5rem;
+    background: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.4rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 95%;
+    max-width: 350px;
+    padding: 0.75rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1rem;
+  }
+
+  .modal-content ul li {
+    font-size: 0.85rem;
+  }
+}
