@@ -40,10 +40,71 @@
   margin-bottom: 1rem;
 }
 
+.project-card .content .flex {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+/* Button row layout */
+.btn-row {
+  display: flex;
+  gap: 12px; /* ✅ Adds space between buttons */
+  align-items: center;
+}
+
+/* Common button styling */
+.btn {
+  font-weight: 500;
+  padding: 6px 14px;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+/* Hover */
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.85;
+}
+
+/* Learn more button */
+.learn-more {
+  color: black;
+  background-color: transparent;
+}
+
+/* ✅ Code button — theme-aware */
+.code-btn {
+  color: white;
+  background-color: var(--theme-accent, #333); /* fallback if no theme */
+  border: none;
+}
+
+/* Optional: adapt to your time-based themes */
+body.morning .code-btn {
+  background-color: #ffd54f; /* soft yellow for morning */
+  color: black;
+}
+
+body.evening .code-btn {
+  background-color: #ff7043; /* warm orange for evening */
+  color: white;
+}
+
+body.night .code-btn {
+  background-color: #3949ab; /* cool blue for night */
+  color: white;
+}
+
+
 /* Learn More Button Styles */
 .project-card .content button {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem; 
+  padding: 2 rem;
   border: 2px solid #000;
   border-radius: 6px;
   background-color: #f9f9f9;

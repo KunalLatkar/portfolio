@@ -19,11 +19,12 @@ export default function ProfilePhoto() {
         className="profile-image w-16 h-16 rounded-full overflow-hidden border border-gray-300 cursor-pointer"
         onClick={openModal}
       >
-        <img
-          src="/profile.jpg" // Make sure profile.jpg is in the /public folder
-          alt="Profile"
-          className="w-full h-full object-cover"
-        />
+       <img
+        src={`${process.env.PUBLIC_URL}/images/profile.jpg`}
+        alt="Profile"
+        className="w-full h-full object-cover"
+      />
+
       </div>
 
       {/* Modal */}
@@ -33,11 +34,12 @@ export default function ProfilePhoto() {
             <button className="close-button" onClick={closeModal}>
               ×
             </button>
-            <img
-              src="profile.jpg"
+           <img
+              src={`${process.env.PUBLIC_URL}/profile.jpg`}
               alt="Full Size"
               className="popup-image"
             />
+
           </div>
         </div>
       )}

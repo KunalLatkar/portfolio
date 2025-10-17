@@ -4,24 +4,29 @@ import ProfilePhoto from './components/ProfilePhoto';
 import About from './components/About';
 import Project from './components/Project';
 import ThemeToggle from './components/theme'; // Import the toggle component
+import WorkingOn from "./components/WorkingOn";
+
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('about');
   const [theme, setTheme] = useState('morning'); // Default theme
 
   // Dynamically load the selected theme CSS
-  useEffect(() => {
-    const existingLink = document.getElementById('theme-style');
-    if (existingLink) {
-      existingLink.href = `/styles/${theme}.css`;
-    } else {
-      const link = document.createElement('link');
-      link.id = 'theme-style';
-      link.rel = 'stylesheet';
-      link.href = `/styles/${theme}.css`;
-      document.head.appendChild(link);
-    }
-  }, [theme]);
+useEffect(() => {
+  const existingLink = document.getElementById('theme-style');
+  const cssPath = `${process.env.PUBLIC_URL}/styles/${theme}.css`;
+
+  if (existingLink) {
+    existingLink.href = cssPath;
+  } else {
+    const link = document.createElement('link');
+    link.id = 'theme-style';
+    link.rel = 'stylesheet';
+    link.href = cssPath;
+    document.head.appendChild(link);
+  }
+}, [theme]);
+
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -79,23 +84,7 @@ export default function App() {
         <About />
 
         {/* Working On */}
-        <section id="working-on" className="mb-16">
-          <h2 className="text-4xl font-bold mb-8">What I'm Working On</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="card p-6 flex items-center">
-              <Code size={32} className="mr-4" />
-              <span className="text-xl">ML Models</span>
-            </div>
-            <div className="card p-6 flex items-center">
-              <Layers size={32} className="mr-4" />
-              <span className="text-xl">Systems</span>
-            </div>
-            <div className="card p-6 flex items-center">
-              <Grid size={32} className="mr-4" />
-              <span className="text-xl">Applications</span>
-            </div>
-          </div>
-        </section>
+        <WorkingOn />
 
         {/* Skills */}
         <section id="skills" className="mb-16">
@@ -107,11 +96,23 @@ export default function App() {
             </div>
             <div className="skill-section">
               <h3 className="text-2xl font-semibold mb-3">Frameworks & Tools</h3>
-              <p>Flask</p><p>Power BI</p><p>Tableau</p><p>Firebase</p>
+              <p>Linux</p><p>Git</p><p>GitHub</p><p>Power BI</p><p>Tableau</p><p>Firebase</p>
             </div>
             <div className="skill-section">
               <h3 className="text-2xl font-semibold mb-3">Libraries</h3>
-              <p>Pandas</p><p>NumPy</p><p>TensorFlow</p><p>Matplotlib</p><p>Scikit-learn</p><p>PyTorch</p><p>Streamlit</p>
+              <p>Pandas</p><p>TensorFlow</p><p>Scikit-learn</p><p>PyTorch</p><p>PyQt</p><p>Matplotlib</p><p>Streamlit</p>
+            </div>
+            <div className="skill-section">
+              <h3 className="text-2xl font-semibold mb-3">Databases</h3>
+              <p>MySQL</p><p>MongoDB</p><p>SQlite</p>
+            </div>
+            <div className="skill-section">
+              <h3 className="text-2xl font-semibold mb-3">Concepts</h3>
+              <p>Machine Learning</p><p>Object Oriented Programming</p><p>Operating systems</p>
+            </div>
+            <div className="skill-section">
+              <h3 className="text-2xl font-semibold mb-3">Professional Skills</h3>
+              <p>Problem Solving</p><p>Team Collaboration</p><p>Adaptability</p>
             </div>
           </div>
         </section>
