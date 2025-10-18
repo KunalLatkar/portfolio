@@ -8,7 +8,7 @@ export default function Window({ show, onClose, title, image, details, compact =
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div
-        className={`modal ${compact ? "modal-compact" : ""}`}
+        className={`modal ${compact ? "modal-compact" : "modal"}`}
         onClick={(e) => e.stopPropagation()}
       >
         <button className="close-btn" onClick={onClose}>×</button>

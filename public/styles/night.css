@@ -4,11 +4,6 @@
   --card-bg: #121212;
 }
 
-/* 🌙 Night Theme Styles */
-.night-theme {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
 
 /* Global Styles */
 body {

@@ -5,6 +5,7 @@ import About from './components/About';
 import Project from './components/Project';
 import ThemeToggle from './components/theme'; // Import the toggle component
 import WorkingOn from "./components/WorkingOn";
+import "./Features/window.css"; // uses those vars
 
 
 export default function App() {
