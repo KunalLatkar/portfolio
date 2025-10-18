@@ -1,15 +1,22 @@
-/* Night Theme Styles */
+:root {
+  --bg-color: #121212;
+  --text-color: #EAEAEA;
+  --card-bg: #121212;
+}
+
+
+/* 🌙 Night Theme Styles */
 .night-theme {
-  background-color: #363434;
-  color: #EFECEC;
+  background-color: #121212;
+  color: #EAEAEA;
 }
 
 /* Global Styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #363434;
-  color: #EFECEC;
+  background-color: #121212;
+  color: #EAEAEA;
   line-height: 1.6;
 }
 
@@ -20,13 +27,13 @@ img {
 }
 
 a {
-  color: #EFECEC;
+  color: #4FC3F7;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #62929A;
+  color: #81D4FA;
 }
 
 /* Header */
@@ -35,10 +42,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #5C5757;
-  color: #EFECEC;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid #444;
+  background-color: #1C1C1C;
+  color: #EAEAEA;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #2C2C2C;
 }
 
 header .profile {
@@ -52,26 +59,25 @@ header .profile-image {
   border-radius: 50%;
   overflow: hidden;
   margin-right: 1rem;
-  border: 2px solid #EFECEC;
+  border: 2px solid #4FC3F7;
 }
 
 header .profile-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
 }
 
 header .profile-info h1 {
   font-size: 2rem;
   margin: 0;
   font-weight: bold;
-  color: #EFECEC;
+  color: #EAEAEA;
 }
 
 header .profile-info p {
   margin: 4px 0 0;
-  color: #ccc;
+  color: #B0B0B0;
   font-size: 1rem;
 }
 
@@ -86,20 +92,20 @@ header nav a {
   border: none;
   font-size: 1rem;
   cursor: pointer;
+  color: #EAEAEA;
   transition: color 0.2s ease;
-  color: #EFECEC;
 }
 
 header nav .resume-btn {
-  background-color: #62929A;
-  color: #EFECEC;
+  background-color: #4FC3F7;
+  color: #121212;
   padding: 0.5rem 1rem;
   border-radius: 6px;
 }
 
 header nav .resume-btn:hover {
-  background-color: #EFECEC;
-  color: #363434;
+  background-color: #81D4FA;
+  color: #121212;
 }
 
 /* Main Layout */
@@ -113,14 +119,14 @@ main {
 section h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #EFECEC;
+  color: #EAEAEA;
 }
 
 /* About */
 #about p {
   max-width: 1200px;
   font-size: 1.1rem;
-  color: #EFECEC;
+  color: #EAEAEA;
 }
 
 /* Contact Icons */
@@ -136,17 +142,17 @@ section h2 {
 .contact-icon {
   height: 48px;
   width: 48px;
-  filter: grayscale(100%);
+  filter: brightness(0) invert(1); /* turns dark icons into white */
   transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
   cursor: pointer;
-  color: white;
 }
 
 .contact-icon:hover {
   transform: scale(1.1);
   opacity: 0.8;
-  filter: grayscale(0%);
+  filter: brightness(0) invert(1) drop-shadow(0 0 6px #4FC3F7);
 }
+
 
 /* Working On Grid */
 #working-on .grid {
@@ -165,19 +171,20 @@ section h2 {
   display: flex;
   align-items: center;
   padding: 1.5rem;
-  border: 1px solid #EFECEC;
+  border: 1px solid #2C2C2C;
   border-radius: 12px;
-  background-color: #5C5757;
-  transition: box-shadow 0.2s ease;
+  background-color: #1E1E1E;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(239, 236, 236, 0.2);
+  box-shadow: 0 8px 16px rgba(79, 195, 247, 0.15);
 }
 
 .card svg {
   margin-right: 1rem;
+  color: #4FC3F7;
 }
 
 /* Skills */
@@ -194,40 +201,27 @@ section h2 {
 }
 
 .skill-section {
-  background-color: #5C5757;
-  border: 1px solid #EFECEC;
+  background-color: #1E1E1E;
+  border: 1px solid #2C2C2C;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(239, 236, 236, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
 }
 
 .skill-section:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(239, 236, 236, 0.2);
+  box-shadow: 0 6px 12px rgba(79, 195, 247, 0.15);
 }
 
 .skill-section h3 {
-  color: #EFECEC;
+  color: #EAEAEA;
 }
 
 .skill-section p {
   margin-bottom: 0.5rem;
-  color: #EFECEC;
+  color: #B0B0B0;
   font-size: 1rem;
-}
-
-.skill-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.skill-item img {
-  width: 24px;
-  height: 24px;
-  margin-right: 0.5rem;
-  opacity: 0.9;
 }
 
 /* Projects */
@@ -244,8 +238,8 @@ section h2 {
 }
 
 .project-card {
-  border: 1px solid #EFECEC;
-  background-color: #5C5757;
+  border: 1px solid #2C2C2C;
+  background-color: #1E1E1E;
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 0.2s ease;
@@ -256,25 +250,13 @@ section h2 {
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(239, 236, 236, 0.2);
+  box-shadow: 0 8px 16px rgba(79, 195, 247, 0.15);
 }
 
 .project-card .thumb {
   height: 200px;
-  background-color: #62929A;
+  background-color: #2C2C2C;
   overflow: hidden;
-}
-
-.project-card .content button:hover {
-  background-color: #62929A;
-  color: #fff;
-  border-color: #62929A;
-}
-
-.project-card .thumb img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .project-card .content {
@@ -285,12 +267,27 @@ section h2 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
-  color: #EFECEC;
+  color: #EAEAEA;
 }
 
 .project-card .content p {
-  color: #EFECEC;
+  color: #B0B0B0;
   margin-bottom: 1rem;
+}
+
+.project-card .content button {
+  color: #EAEAEA;
+  border: 1px solid #4FC3F7;
+  background: transparent;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.project-card .content button:hover {
+  background-color: #4FC3F7;
+  color: #121212;
 }
 
 /* Contact Form */
@@ -303,24 +300,23 @@ section h2 {
 
 #contact label {
   font-weight: 500;
-  color: #EFECEC;
+  color: #EAEAEA;
 }
 
 #contact input,
 #contact textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #EFECEC;
+  border: 1px solid #2C2C2C;
   border-radius: 6px;
   font-size: 1rem;
-  font-family: inherit;
-  background-color: #5C5757;
-  color: #EFECEC;
+  background-color: #1E1E1E;
+  color: #EAEAEA;
 }
 
 #contact button {
-  background-color: #62929A;
-  color: #EFECEC;
+  background-color: #4FC3F7;
+  color: #121212;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   border-radius: 6px;
@@ -330,63 +326,36 @@ section h2 {
 }
 
 #contact button:hover {
-  background-color: #EFECEC;
-  color: #62929A;
+  background-color: #81D4FA;
 }
 
 /* Footer */
 footer {
-  background-color: #5C5757;
-  border-top: 1px solid #EFECEC;
+  background-color: #1C1C1C;
+  border-top: 1px solid #2C2C2C;
   padding: 2rem;
-  color: #EFECEC;
+  color: #B0B0B0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
-  width: 100%;
-}
-
-footer p {
-  margin: 0;
-  color: #EFECEC;
-}
-
-footer .socials {
-  display: flex;
-  gap: 1rem;
-}
-
 footer .socials a svg {
-  fill: #EFECEC;
+  fill: #EAEAEA;
   transition: fill 0.2s ease;
 }
 
 footer .socials a:hover svg {
-  fill: #62929A;
+  fill: #4FC3F7;
 }
 
-/* Mobile Responsive Styles for All Themes */
+/* Responsive */
 @media (max-width: 1024px) {
   header {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
-  }
-
-  header nav {
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 0.5rem;
   }
 
   main {
@@ -398,94 +367,18 @@ footer .socials a:hover svg {
     gap: 1.5rem;
   }
 
-  #working-on .grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
   #projects .project-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .project-card {
-    height: auto;
-  }
-
-  .project-card .thumb {
-    height: 180px;
-  }
-
-  footer .footer-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .contact-icons {
-    flex-direction: column;
-    gap: 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  header .profile-info h1 {
-    font-size: 1.5rem;
-  }
-
-  header .profile-info p {
-    font-size: 0.9rem;
-  }
-
   section h2 {
     font-size: 2rem;
   }
 
   .skill-section {
     padding: 1rem;
-  }
-
-  #contact form {
-    gap: 0.75rem;
-  }
-
-  #contact input,
-  #contact textarea {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  #contact button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .contact-icons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    justify-items: center;
-    align-items: center;
-  }
-}
-
-
-@media (max-width: 480px) {
-  header nav,
-
-  header nav .resume-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  section h2 {
-    font-size: 1.75rem;
-  }
-
-  .skill-section h3 {
-    font-size: 1.25rem;
   }
 
   .project-card .content h3 {

@@ -2,12 +2,15 @@
 import React from "react";
 import "./window.css";
 
-export default function Window({ show, onClose, title, image, details, children }) {
+export default function Window({ show, onClose, title, image, details, compact = false, children }) {
   if (!show) return null;
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal" onClick={(e) => e.stopPropagation()}>
+      <div
+        className={`modal ${compact ? "modal-compact" : ""}`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <button className="close-btn" onClick={onClose}>×</button>
         <div className="modal-content">
           {image && <img src={image} alt={title} className="modal-image" />}

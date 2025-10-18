@@ -1,3 +1,10 @@
+:root {
+  --bg-color: #FFF0DC;
+  --text-color: #543A14;
+  --card-bg: #FFF0DC;
+}
+
+
 /* Evening Theme Styles */
 .evening-theme {
   background-color: #FFF0DC;

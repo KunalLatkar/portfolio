@@ -11,7 +11,8 @@
 }
 
 .modal {
-  background: #fff;
+  background: var(--card-bg);
+  color: var(--text-color);
   border-radius: 12px;
   padding: 1.5rem;
   width: 90%;
@@ -26,16 +27,16 @@
   position: absolute;
   top: 10px;
   right: 16px;
+  color: var(--text-color);
   background: transparent;
   border: none;
   font-size: 1.6rem;
   cursor: pointer;
-  color: #333;
   transition: color 0.2s;
 }
 
 .close-btn:hover {
-  color: #000;
+    opacity: 0.8;
 }
 
 .modal-content img.modal-image {
@@ -43,6 +44,28 @@
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
+}
+
+/* 🪟 Compact version for small popups (Email, Phone, etc.) */
+.modal.modal-compact {
+  width: 350px;
+  max-width: 90%;
+  min-height: 100px;
+  padding: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal.modal-compact .modal-content h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.modal.modal-compact .modal-content p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-primary, #eaeaea); /* adapt to theme */
+  margin: 0.5rem 0 0;
 }
 
 .modal-content h3 {

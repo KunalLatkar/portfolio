@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './About.css';
+import Window from '../Features/window';
 
 export default function About() {
   const [showEmail, setShowEmail] = useState(false);
@@ -27,19 +28,22 @@ export default function About() {
         </div>
       </div>
 
-      {showEmail && (
-        <PopupModal onClose={closeAll}>
-          <strong>Email:</strong><br />
-          kunallatkar04@gmail.com
-        </PopupModal>
-      )}
-
-      {showPhone && (
-        <PopupModal onClose={closeAll}>
-          <strong>Phone:</strong><br />
-          +91 9607095223
-        </PopupModal>
-      )}
+      <Window
+          show={showEmail}
+          onClose={closeAll}
+          title="Email"
+          compact
+        >
+          <p>kunallatkar04@gmail.com</p>
+      </Window>
+      <Window
+          show={showPhone}
+          onClose={closeAll}
+          title="Phone"
+          compact
+        >
+          <p>+91 9607095223</p>
+      </Window>
 
         <h2 className="text-4xl font-bold mb-6">About Me</h2>
         <p className="text-lg max-w-3xl">
