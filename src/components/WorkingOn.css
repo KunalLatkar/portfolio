@@ -72,6 +72,26 @@
     font-size: 1rem;
   }
 }
+/* Center the whole slider */
+.image-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Make images tall & centered */
+.modal-image {
+  max-height: 500px;         /* tall appearance */
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto;             /* center horizontally */
+  display: block;             
+}
+
 
 @media (max-width: 768px) {
   .working-grid {

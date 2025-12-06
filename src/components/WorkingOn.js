@@ -1,7 +1,7 @@
 // src/components/WorkingOn.js
 import React, { useState } from "react";
 import { Code, Layers, Grid } from "lucide-react";
-import Window from "../Features/window"; // ✅ correct relative path now
+import Window from "../Features/window"; //  correct relative path now
 import "./WorkingOn.css";
 
 export default function WorkingOn() {
@@ -30,70 +30,59 @@ export default function WorkingOn() {
         </div>
       </div>
 
-      {/* 🪟 Internship */}
+      {/*  Internship */}
       <Window
         show={activeWindow === "internship"}
         onClose={handleClose}
         title="Python Developer Intern @ Futura Apsol"
-        image={`${process.env.PUBLIC_URL}/images/futura.png`}
+        images={[
+          `${process.env.PUBLIC_URL}/images/futura.png`,
+          `${process.env.PUBLIC_URL}/images/futura1.png`
+        ]}
         details={[
-        "Designed a real-time color sequence detection solution using YOLO, improving quality control analytics.",
-        "Developed a client-server module with Python sockets and PyQt for real-time synchronization.",
-        "Created a PyQt dashboard for visual insights and quick decision-making.",
-        "Deployed models on Raspberry Pi 5 + Hailo-8L (Linux) for optimized edge performance.",
-        "Worked with MLflow and implemented MLOps for model tracking and deployment.",
-        "Collaborated with teams to optimize data pipelines and ensure smooth integration.",
-        "Documented the end-to-end workflow for reproducibility and scalability."
+          "Designed a real-time color sequence detection solution using YOLO, improving quality control analytics.",
+          "Developed a client-server module with Python sockets and PyQt for real-time synchronization.",
+          "Created a PyQt dashboard for visual insights and quick decision-making.",
+          "Deployed models on Raspberry Pi 5 + Hailo-8L (Linux) for optimized edge performance.",
+          "Worked with MLflow and implemented MLOps for model tracking and deployment.",
+          "Collaborated with teams to optimize data pipelines and ensure smooth integration.",
+          "Documented the end-to-end workflow for reproducibility and scalability."
         ]}
       />
 
-      {/* 🪟 Leetcode */}
-        <Window
-            show={activeWindow === "leetcode"}
-            onClose={handleClose}
-            title="Leetcode Profile"
-            >
-            {/* ✅ Image size and centering suggestions:
-                - Vertically long image → height: "500px"
-                - Horizontally wide image → height: "300px"
-                - Square image → height: "400px"
-                - Small logo/icon → height: "150px"
-                - Full modal fit → height: "100%", width: "100%", objectFit: "cover"
-            */}
+      {/*  Leetcode */}
+      <Window
+        show={activeWindow === "leetcode"}
+        onClose={handleClose}
+        title="Leetcode Profile"
+        images={[
+          `${process.env.PUBLIC_URL}/images/leetcode.png`,
+          `${process.env.PUBLIC_URL}/images/leetcode1.png`
+        ]}
+      >
+        <p style={{ textAlign: "center" }}>
+          Solved over 100+ coding problems on data structures and algorithms.
+        </p>
 
-            <div style={{ display: "flex", justifyContent: "center", marginBottom: "1rem" }}>
-                <img
-                src={`${process.env.PUBLIC_URL}/images/leetcode.png`}
-                alt="Leetcode"
-                style={{
-                    height: "300px",           // adjust this based on image type
-                    borderRadius: "10px",
-                    objectFit: "contain",
-                    display: "block"
-                }}
-                />
-            </div>
+        <div style={{ textAlign: "center", marginTop: "0.5rem" }}>
+          <a
+            href="https://leetcode.com/u/klatkar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Profile : klatkar
+          </a>
+        </div>
+      </Window>
 
-            <p style={{ textAlign: "center" }}>
-                Solved over 100+ coding problems on data structures and algorithms.
-            </p>
-            <div style={{ textAlign: "center" }}>
-                <a
-                href="https://leetcode.com/u/klatkar"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                View Profile : klatkar
-                </a>
-            </div>
-        </Window>
-
-      {/* 🪟 Project */}
+      {/*  Project */}
       <Window
         show={activeWindow === "project"}
         onClose={handleClose}
         title="Portfolio Risk Calculator"
-        image={`${process.env.PUBLIC_URL}/images/risk_calc.png`}
+        images={[
+          `${process.env.PUBLIC_URL}/images/risk_calc.png`
+        ]}
         details={[
             "Designed a modular financial analytics system in C++, implementing OOP principles to analyze stock portfolios and compute real-time risk metrics.",
             "Developed a custom CSV parser and risk calculator to process price data, calculate returns, volatility, and dynamic risk scores.",
